@@ -8,7 +8,7 @@
 | 주최 | 한국투자공사(KIC) · DACON |
 | 접수 마감 | 2026-11-12 (목) 10:00 KST |
 | 대회 페이지 | https://daker.ai/public/hackathons/kic-ai-agent-competition |
-| 팀 구성 | (팀명 / 인원) |
+| 참가 형태 | 개인 참가 (박채원 / [@Chaewon-Park-STUDY](https://github.com/Chaewon-Park-STUDY)) |
 
 ## 1. Problem
 <!-- KIC의 어떤 투자·금융 업무를 겨냥하는지, 현재 pain point는 무엇인지 -->
