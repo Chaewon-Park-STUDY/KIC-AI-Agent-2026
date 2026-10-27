@@ -1,6 +1,13 @@
-# secrets
+# ===== secrets (never commit) =====
 .env
+.env.*
+!.env.example
 *.key
+*.pem
+secrets/
+credentials*.json
+service-account*.json
+.streamlit/secrets.toml
 
 # python
 __pycache__/

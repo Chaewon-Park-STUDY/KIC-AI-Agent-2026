@@ -113,4 +113,8 @@ copy .env.example .env          # API key 입력 (macOS/Linux: cp)
 | 오픈소스 | | | | |
 | 생성형 AI·개발 도구 | | | | |
 
-> ⚠️ 커밋 전 API key·개인정보·민감정보 포함 여부 확인
+## Secrets Policy
+- API key는 `.env`에만 저장하고 코드에서는 `os.getenv()`로 읽습니다. 코드·노트북·문서에 직접 쓰지 않습니다.
+- `.env`, `*.key`, `credentials*.json` 등은 `.gitignore`로 제외합니다. 필요한 변수 이름은 `.env.example`에 둡니다.
+- 데모 배포 시 key는 배포 플랫폼의 환경변수/Secrets 설정에 등록합니다.
+- 커밋 전 `git diff --staged`로 key 포함 여부를 확인합니다. 노출 시 즉시 해당 key를 폐기·재발급합니다.
