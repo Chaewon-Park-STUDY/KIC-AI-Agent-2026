@@ -70,6 +70,7 @@ User request
 | 날짜 | 내용 |
 |---|---|
 | 2026-10-27 | 저장소 생성, 대회 규칙·기획서 양식 정리 |
+| 2026-11-08 | KIC 도메인 조사, 방향 확정 (정기 보고·이상 경보 / 기한·의무 관리 / 보안 경계), 분류 체계 설정 → [기획 노트](docs/planning/ideation.md) |
 
 ## Repository Structure
 
@@ -77,6 +78,7 @@ User request
 .
 ├── docs/
 │   ├── proposal/     # 예선 기획서 (pptx 원본, 제출 PDF)
+│   ├── planning/     # 기획 노트 (도메인 조사, 아이디어, 분류 체계)
 │   ├── final/        # 본선 발표자료 PDF
 │   └── devlog/       # 날짜별 개발 기록 (YYYY-MM-DD.md)
 ├── src/
