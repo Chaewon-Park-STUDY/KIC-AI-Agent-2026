@@ -81,17 +81,24 @@ User request
 │   ├── planning/     # 기획 노트 (도메인 조사, 아이디어, 분류 체계)
 │   ├── final/        # 본선 발표자료 PDF
 │   └── devlog/       # 날짜별 개발 기록 (YYYY-MM-DD.md)
-├── src/
-│   ├── agent/        # orchestrator, prompts, tool definitions
-│   ├── tools/        # 개별 tool 구현 (API, 데이터 처리)
-│   └── app/          # MVP UI / API 서버
+├── agent/            # Python: 에이전트 코어 (분류 체계, 추출, 경보, 기한 계산)
+│   └── taxonomy.py   # 닫힌 분류 체계 + 사람 이관 규칙
+├── web/              # TypeScript: 검토·승인 대시보드 (Supabase 연동 예정)
+│   └── src/types/taxonomy.ts   # agent/taxonomy.py 미러
+├── tests/            # pytest
 ├── data/             # 샘플 데이터 (원본·대용량은 커밋 X)
 ├── notebooks/        # 탐색·실험
-├── tests/
 ├── .env.example
 ├── requirements.txt
 └── README.md
 ```
+
+## Tech Stack
+| 영역 | 언어 / 도구 |
+|---|---|
+| 에이전트 코어, 통계 모델 (conformal 보정) | Python |
+| 검토·승인 대시보드 | TypeScript |
+| DB, 권한(RLS), 감사 기록 | Supabase |
 
 ## Getting Started
 <!-- 본선 제출 시 필수: 실행 방법, 사용 기술, 데모 URL -->
@@ -103,6 +110,11 @@ python -m venv .venv
 .venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 copy .env.example .env          # API key 입력 (macOS/Linux: cp)
+python -m pytest -q tests       # Python 테스트
+
+cd web
+npm install
+npm run typecheck               # TypeScript 타입 검사
 ```
 
 ## Sources & AI Usage
