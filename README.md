@@ -8,7 +8,7 @@
 | 주최 | 한국투자공사(KIC) · DACON |
 | 대회 페이지 | https://daker.ai/public/hackathons/kic-ai-agent-competition |
 | 참가 형태 | 개인 참가 (박채원 / [@Chaewon-Park-STUDY](https://github.com/Chaewon-Park-STUDY)) |
-| 서비스명 | (TBD) |
+| 서비스명 | HumanSight — AI가 일하고, 사람이 본다 |
 
 ## Timeline
 
