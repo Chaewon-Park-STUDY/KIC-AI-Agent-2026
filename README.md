@@ -73,6 +73,7 @@ User request
 | 2026-11-08 | KIC 도메인 조사, 방향 확정 (정기 보고·이상 경보 / 기한·의무 관리 / 보안 경계), 분류 체계 설정 → [기획 노트](docs/planning/ideation.md) |
 | 2026-11-08 | 근거 수치 조사, 에이전트 4개·중간 감독 루프·불확실성 기반 자율도 설계, 기획서 초안 2판 → [docs/proposal](docs/proposal/) |
 | 2026-11-10 | KIC 수작업 근거 조사, 메인 장면·경보 등급·AI 감독관·인과추론 설계 결정 → [기획 노트 11절](docs/planning/ideation.md) |
+| 2026-11-10 | WSIB 12개 분기 conformal 등급 실험(coverage 77.7/94.6/99.0%), 기획서 초안 3판 → [실험 결과](docs/planning/experiment-conformal-tiers.md) |
 
 ## Repository Structure
 
@@ -84,6 +85,7 @@ User request
 │   ├── final/        # 본선 발표자료 PDF
 │   └── devlog/       # 날짜별 개발 기록 (YYYY-MM-DD.md)
 ├── agent/            # Python: 에이전트 코어 (분류 체계, 추출, 경보, 기한 계산)
+├── analysis/wsib/    # Python: 공시 파싱 + conformal 경보 등급 실험
 │   └── taxonomy.py   # 닫힌 분류 체계 + 사람 이관 규칙
 ├── web/              # TypeScript: 검토·승인 대시보드 (Supabase 연동 예정)
 │   └── src/types/taxonomy.ts   # agent/taxonomy.py 미러
