@@ -72,6 +72,7 @@ User request
 | 2026-10-27 | 저장소 생성, 대회 규칙·기획서 양식 정리 |
 | 2026-11-08 | KIC 도메인 조사, 방향 확정 (정기 보고·이상 경보 / 기한·의무 관리 / 보안 경계), 분류 체계 설정 → [기획 노트](docs/planning/ideation.md) |
 | 2026-11-08 | 근거 수치 조사, 에이전트 4개·중간 감독 루프·불확실성 기반 자율도 설계, 기획서 초안 2판 → [docs/proposal](docs/proposal/) |
+| 2026-11-10 | KIC 수작업 근거 조사, 메인 장면·경보 등급·AI 감독관·인과추론 설계 결정 → [기획 노트 11절](docs/planning/ideation.md) |
 
 ## Repository Structure
 
