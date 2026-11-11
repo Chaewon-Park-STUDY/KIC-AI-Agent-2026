@@ -131,9 +131,9 @@ npm run typecheck               # TypeScript 타입 검사
 | 데이터 | ILPA 보고 양식 · 납입/분배 양식 | [ilpa.org](https://ilpa.org/reportingtemplate/), [Katten](https://katten.com/ilpa-updates-capital-call-distribution-template-implications-for-gps-and-lps) | 이용 조건 확인 후 사용 | 고정 항목 정의, 합성 문서 |
 | 데이터 | 제재 명단 / 벤치마크 / 공휴일 | [OFAC](https://sanctionslist.ofac.treas.gov), [FRED](https://fred.stlouisfed.org), [공공데이터포털](https://www.data.go.kr) | 각 약관 | 근거 탐색, 설명 변수, 마감 계산 |
 | 참고 | KIC 산티아고 원칙 자가평가 2025 | [IFSWF](https://www.ifswf.org/assessment/kic-2025) | 공개 자료 | 정기 보고 의무 |
-| 참고 | 해외 운용사 137곳 / 운용역 82명 / 자산 규모 | [KED Global](https://www.kedglobal.com/newsView/ked202310130008), [MTN](https://news.mtn.co.kr/article/2026101214554819770), [Asia Asset](https://www.asiaasset.com/sovereign-wealth-funds/korea-wealth-fund-kics-assets-hit-record-us232-billion/) | 언론 보도 | 문제 정의 |
+| 참고 | 대체투자 해외 운용사 137곳(2022) / 투자운용부문 정규직 82명·투자부문 123명 / 자산 규모 | [KED Global](https://www.kedglobal.com/newsView/ked202310130008), [MTN](https://news.mtn.co.kr/article/2026101214554819770), [Asia Asset](https://www.asiaasset.com/sovereign-wealth-funds/korea-wealth-fund-kics-assets-hit-record-us232-billion/) | 언론 보도 | 문제 정의 |
 | 참고 | 의결권 3,648건 / TPA 시범 도입 | [아시아경제 2023.10](https://core.asiae.co.kr/article/2023103116014688777), [아시아경제 2026.5](https://view.asiae.co.kr/article/2026052816222969932) | 언론 보도 | 확장 로드맵 |
-| 참고 | 2018 감사원 지적 / 2026 국감 사내 AI | [서울신문](https://m.go.seoul.co.kr/news/2018/05/30/20180530011014), [SBS Biz](https://biz.sbs.co.kr/amp/article/20000340656) | 언론 보도 | 문제 정의 |
+| 참고 | 2018 감사원 지적 / 사내 AI 활용 현황(국회 기재위 의원실 자료, 2026.10) | [서울신문](https://m.go.seoul.co.kr/news/2018/05/30/20180530011014), [SBS Biz](https://biz.sbs.co.kr/amp/article/20000340656) | 언론 보도 | 문제 정의 |
 | 참고 | 사칭 송금 통계 · 사례 | [FBI IC3](https://www.ic3.gov), [FTI Consulting](https://www.fticonsulting.com/insights/case-studies/business-email-compromise-private-equity-firm) | 공개 자료 | 문제 정의 |
 | 참고 | 인공지능기본법 | [법무법인 지평](https://jipyong.com/kr/board/news_view.php?seq=13691) | 공개 자료 | 왜 지금인가 |
 | 참고 | 감독·개입·지휘 구분 (HOTL / HITL / HIC) | [EU 신뢰할 수 있는 AI 가이드라인](https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelines/1.html) | 공개 자료 | 사람 역할 설계 |
