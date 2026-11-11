@@ -74,6 +74,7 @@ User request
 | 2026-11-08 | 근거 수치 조사, 에이전트 4개·중간 감독 루프·불확실성 기반 자율도 설계, 기획서 초안 2판 → [docs/proposal](docs/proposal/) |
 | 2026-11-10 | KIC 수작업 근거 조사, 메인 장면·경보 등급·AI 감독관·인과추론 설계 결정 → [기획 노트 11절](docs/planning/ideation.md) |
 | 2026-11-10 | WSIB 12개 분기 conformal 등급 실험(coverage 77.7/94.6/99.0%), 기획서 초안 3판 → [실험 결과](docs/planning/experiment-conformal-tiers.md) |
+| 2026-11-11 | 기획서 7판: 자료구조·알고리즘 9종을 시나리오 7단계에 매핑, 사칭 송금 근거 최신화(FBI IC3 2025·FTI), 기대효과 근거 규칙([출처]/[실험]/[가정]) + WSIB 문서 수 실측, 부록 출처 링크 → [개발 기록](docs/devlog/2026-11-11.md) |
 
 ## Repository Structure
 
@@ -126,10 +127,17 @@ npm run typecheck               # TypeScript 타입 검사
 
 | 구분 | 이름 | 출처 / 링크 | 이용 조건 / 라이선스 | 활용 범위 |
 |---|---|---|---|---|
-| 데이터 | | | | |
-| 모델 / API | | | | |
-| 오픈소스 | | | | |
-| 생성형 AI·개발 도구 | | | | |
+| 데이터 | WSIB 사모펀드 분기 보고서 12개 분기 | [sib.wa.gov](https://www.sib.wa.gov/docs/reports/quarterly/ir093025.pdf), 2022 Q4는 [Wayback Machine](https://web.archive.org) | 공개 자료 | conformal 등급 실험, 문서 수 실측 |
+| 데이터 | ILPA 보고 양식 · 납입/분배 양식 | [ilpa.org](https://ilpa.org/reportingtemplate/), [Katten](https://katten.com/ilpa-updates-capital-call-distribution-template-implications-for-gps-and-lps) | 이용 조건 확인 후 사용 | 고정 항목 정의, 합성 문서 |
+| 데이터 | 제재 명단 / 벤치마크 / 공휴일 | [OFAC](https://sanctionslist.ofac.treas.gov), [FRED](https://fred.stlouisfed.org), [공공데이터포털](https://www.data.go.kr) | 각 약관 | 근거 탐색, 설명 변수, 마감 계산 |
+| 참고 | KIC 산티아고 원칙 자가평가 2025 | [IFSWF](https://www.ifswf.org/assessment/kic-2025) | 공개 자료 | 정기 보고 의무 |
+| 참고 | 해외 운용사 137곳 / 운용역 82명 / 자산 규모 | [KED Global](https://www.kedglobal.com/newsView/ked202310130008), [MTN](https://news.mtn.co.kr/article/2026101214554819770), [Asia Asset](https://www.asiaasset.com/sovereign-wealth-funds/korea-wealth-fund-kics-assets-hit-record-us232-billion/) | 언론 보도 | 문제 정의 |
+| 참고 | 2018 감사원 지적 / 2026 국감 사내 AI | [서울신문](https://m.go.seoul.co.kr/news/2018/05/30/20180530011014), [SBS Biz](https://biz.sbs.co.kr/amp/article/20000340656) | 언론 보도 | 문제 정의 |
+| 참고 | 사칭 송금 통계 · 사례 | [FBI IC3](https://www.ic3.gov), [FTI Consulting](https://www.fticonsulting.com/insights/case-studies/business-email-compromise-private-equity-firm) | 공개 자료 | 문제 정의 |
+| 참고 | 인공지능기본법 | [법무법인 지평](https://jipyong.com/kr/board/news_view.php?seq=13691) | 공개 자료 | 왜 지금인가 |
+| 참고 (업체 자료) | 처리 시간 추정 / 시간 절감 사례 | [AltHQ](https://www.althq.com/insights/why-manual-capital-call-processing-doesnt-scale-quantitative-look-at-complexity), [Canoe](https://info.canoeintelligence.com/pensions) | 출처 미공개 수치 | 기대효과 비교 |
+| 오픈소스 | pandas, numpy, python-pptx | PyPI | BSD / MIT | 실험·기획서 생성 |
+| 생성형 AI·개발 도구 | Claude (Anthropic) | claude.ai | 서비스 약관 | 자료 조사·요약, 문안 초안, 실험 코드 작성 보조 (최종 판단·작성은 참가자) |
 
 ## Secrets Policy
 - API key는 `.env`에만 저장하고 코드에서는 `os.getenv()`로 읽습니다. 코드·노트북·문서에 직접 쓰지 않습니다.

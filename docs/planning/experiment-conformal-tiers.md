@@ -72,3 +72,12 @@ URL 패턴: `https://www.sib.wa.gov/docs/reports/quarterly/ir{MMDD}{YY}.pdf`
 
 ### 코드
 - `analysis/wsib/parse_wsib.py`, `analysis/wsib/experiment.py`, 결과 `analysis/wsib/results/`
+
+---
+
+## 추가 분석 (2026-11-11): 펀드당 분기 문서 수
+- 목적: 기대효과 계산의 '펀드당 분기 문서 수'를 가정이 아닌 실측 하한으로 대체
+- 방법: 활성 펀드(직전·이번 분기 평가액 > 0)별로 누적 납입·분배가 1만 달러 넘게 늘었는지 확인. 문서 수 = 분기보고서 1 + 계좌명세서 1 + 납입 여부 + 분배 여부
+- 결과: 납입 38.7%, 분배 42.8%, 펀드당 평균 2.82건 (분기별 2.67~2.93)
+- 한계: 분기 내 복수 납입·분배, GP 서한·동의 요청 미포함 → 하한
+- 코드: `analysis/wsib/doc_counts.py`, 결과 `analysis/wsib/results/doc_counts.txt`
