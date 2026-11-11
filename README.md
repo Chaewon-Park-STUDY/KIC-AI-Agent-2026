@@ -8,7 +8,7 @@
 | 주최 | 한국투자공사(KIC) · DACON |
 | 대회 페이지 | https://daker.ai/public/hackathons/kic-ai-agent-competition |
 | 참가 형태 | 개인 참가 (박채원 / [@Chaewon-Park-STUDY](https://github.com/Chaewon-Park-STUDY)) |
-| 서비스명 | HumanSight — AI가 일하고, 사람이 본다 |
+| 서비스명 | HumanSight — AI가 일하고, 사람이 본다 (이상 신호는 원인까지 추적하고, 위험이 클수록 사람의 역할을 감독에서 개입으로 높이는 대체투자 에이전트) |
 
 ## Timeline
 
@@ -136,6 +136,7 @@ npm run typecheck               # TypeScript 타입 검사
 | 참고 | 2018 감사원 지적 / 2026 국감 사내 AI | [서울신문](https://m.go.seoul.co.kr/news/2018/05/30/20180530011014), [SBS Biz](https://biz.sbs.co.kr/amp/article/20000340656) | 언론 보도 | 문제 정의 |
 | 참고 | 사칭 송금 통계 · 사례 | [FBI IC3](https://www.ic3.gov), [FTI Consulting](https://www.fticonsulting.com/insights/case-studies/business-email-compromise-private-equity-firm) | 공개 자료 | 문제 정의 |
 | 참고 | 인공지능기본법 | [법무법인 지평](https://jipyong.com/kr/board/news_view.php?seq=13691) | 공개 자료 | 왜 지금인가 |
+| 참고 | 감독·개입·지휘 구분 (HOTL / HITL / HIC) | [EU 신뢰할 수 있는 AI 가이드라인](https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelines/1.html) | 공개 자료 | 사람 역할 설계 |
 | 참고 (업체 자료) | 처리 시간 추정 / 시간 절감 사례 | [AltHQ](https://www.althq.com/insights/why-manual-capital-call-processing-doesnt-scale-quantitative-look-at-complexity), [Canoe](https://info.canoeintelligence.com/pensions) | 출처 미공개 수치 | 기대효과 비교 |
 | 오픈소스 | pandas, numpy, python-pptx | PyPI | BSD / MIT | 실험·기획서 생성 |
 | 생성형 AI·개발 도구 | Claude (Anthropic) | claude.ai | 서비스 약관 | 자료 조사·요약, 문안 초안, 실험 코드 작성 보조 (최종 판단·작성은 참가자) |
